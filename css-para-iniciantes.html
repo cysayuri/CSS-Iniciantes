@@ -1,385 +1,385 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CSS para Iniciantes</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propriedades CSS Iniciais</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  :root {
-    --bg: #f5f4f0;
-    --surface: #ffffff;
-    --surface2: #f0efe9;
-    --border: #e2e0d8;
-    --text: #1a1917;
-    --text2: #6b6a65;
-    --text3: #9e9d97;
-    --accent: #1D9E75;
-    --accent-light: #E1F5EE;
-    --accent-dark: #0F6E56;
-    --code-bg: #1e1e2e;
-    --code-text: #cdd6f4;
-    --code-val: #a6e3a1;
-    --code-tag: #f38ba8;
-    --code-attr: #fab387;
-    --code-str: #a6e3a1;
-    --code-comment: #585b70;
-    --radius: 12px;
-    --radius-sm: 7px;
-  }
+    :root {
+      --bg: #f5f4f0;
+      --surface: #ffffff;
+      --surface2: #f0efe9;
+      --border: #e2e0d8;
+      --text: #1a1917;
+      --text2: #6b6a65;
+      --text3: #9e9d97;
+      --accent: #1D9E75;
+      --accent-light: #E1F5EE;
+      --accent-dark: #0F6E56;
+      --code-bg: #1e1e2e;
+      --code-text: #cdd6f4;
+      --code-val: #a6e3a1;
+      --code-tag: #f38ba8;
+      --code-attr: #fab387;
+      --code-str: #a6e3a1;
+      --code-comment: #585b70;
+      --radius: 12px;
+      --radius-sm: 7px;
+    }
 
-  body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    padding-bottom: 4rem;
-  }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding-bottom: 4rem;
+    }
 
-  /* HEADER */
-  .header {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 2.5rem 2rem 2rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .header::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #1D9E75, #378ADD, #534AB7, #D85A30);
-  }
-  .header-badge {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent-dark);
-    background: var(--accent-light);
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-bottom: 12px;
-  }
-  .header h1 {
-    font-size: clamp(1.6rem, 4vw, 2.6rem);
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.02em;
-    margin-bottom: 8px;
-  }
-  .header h1 span { color: var(--accent); }
-  .header p {
-    font-size: 1rem;
-    color: var(--text2);
-    max-width: 520px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  .header-stats {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-  }
-  .stat { text-align: center; }
-  .stat-num { font-size: 1.4rem; font-weight: 700; color: var(--text); }
-  .stat-lbl { font-size: 12px; color: var(--text3); }
+    /* HEADER */
+    .header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1D9E75, #378ADD, #534AB7, #D85A30);
+    }
+    .header-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-dark);
+      background: var(--accent-light);
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .header h1 span { color: var(--accent); }
+    .header p {
+      font-size: 1rem;
+      color: var(--text2);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .header-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num { font-size: 1.4rem; font-weight: 700; color: var(--text); }
+    .stat-lbl { font-size: 12px; color: var(--text3); }
 
-  /* MAIN */
-  .main { max-width: 900px; margin: 0 auto; padding: 2rem 1.25rem; }
+    /* MAIN */
+    .main { max-width: 900px; margin: 0 auto; padding: 2rem 1.25rem; }
 
-  /* CARD */
-  .card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    margin-bottom: 2rem;
-    overflow: hidden;
-  }
+    /* CARD */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
 
-  /* CARD HEADER — prop name + reveal button */
-  .card-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 1.1rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-    flex-wrap: wrap;
-  }
-  .prop-tag {
-    font-family: 'Courier New', monospace;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text);
-    background: var(--surface2);
-    padding: 4px 12px;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-  }
+    /* CARD HEADER — prop name + reveal button */
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 1.1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .prop-tag {
+      font-family: 'Courier New', monospace;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      background: var(--surface2);
+      padding: 4px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
 
-  /* Description — hidden by default, revealed on click */
-  .prop-desc {
-    font-size: 0.9rem;
-    color: var(--text2);
-    display: none;
-    animation: fadeIn 0.35s ease;
-  }
-  .prop-desc.revealed { display: block; }
+    /* Description — hidden by default, revealed on click */
+    .prop-desc {
+      font-size: 0.9rem;
+      color: var(--text2);
+      display: none;
+      animation: fadeIn 0.35s ease;
+    }
+    .prop-desc.revealed { display: block; }
 
-  /* Reveal button */
-  .reveal-btn {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 6px 14px;
-    border-radius: 20px;
-    border: 1.5px solid var(--accent);
-    background: transparent;
-    color: var(--accent-dark);
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-  }
-  .reveal-btn:hover {
-    background: var(--accent-light);
-    transform: scale(1.03);
-  }
-  .reveal-btn.done {
-    border-color: var(--border);
-    color: var(--text3);
-    background: var(--surface2);
-    cursor: default;
-    transform: none;
-  }
-  .reveal-btn .btn-icon { font-size: 14px; transition: transform 0.3s; }
-  .reveal-btn.done .btn-icon { transform: rotate(90deg); }
+    /* Reveal button */
+    .reveal-btn {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1.5px solid var(--accent);
+      background: transparent;
+      color: var(--accent-dark);
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+    .reveal-btn:hover {
+      background: var(--accent-light);
+      transform: scale(1.03);
+    }
+    .reveal-btn.done {
+      border-color: var(--border);
+      color: var(--text3);
+      background: var(--surface2);
+      cursor: default;
+      transform: none;
+    }
+    .reveal-btn .btn-icon { font-size: 14px; transition: transform 0.3s; }
 
-  /* CARD BODY */
-  .card-body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 220px;
-  }
-  @media (max-width: 620px) {
-    .card-body { grid-template-columns: 1fr; }
-  }
 
-  /* DEMO PANEL */
-  .demo-panel {
-    padding: 1.5rem;
-    border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  @media (max-width: 620px) {
-    .demo-panel { border-right: none; border-bottom: 1px solid var(--border); }
-  }
-  .panel-label {
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text3);
-  }
-  .demo-stage {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-sm);
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem;
-    flex: 1;
-    position: relative;
-  }
-  .controls { display: flex; flex-direction: column; gap: 10px; }
-  .ctrl-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .ctrl-row label {
-    font-size: 12px;
-    color: var(--text2);
-    min-width: 90px;
-  }
-  .ctrl-row input[type=range] {
-    flex: 1;
-    accent-color: var(--accent);
-    cursor: pointer;
-  }
-  .val-badge {
-    font-size: 12px;
-    font-family: 'Courier New', monospace;
-    color: var(--accent-dark);
-    background: var(--accent-light);
-    padding: 2px 8px;
-    border-radius: 4px;
-    min-width: 54px;
-    text-align: center;
-  }
-  .swatches { display: flex; gap: 6px; flex-wrap: wrap; }
-  .swatch {
-    width: 26px; height: 26px;
-    border-radius: 6px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: transform 0.15s, border-color 0.15s;
-  }
-  .swatch:hover { transform: scale(1.15); }
-  .swatch.active { border-color: var(--text); }
-  .btn-group { display: flex; gap: 6px; flex-wrap: wrap; }
-  .btn-opt {
-    font-size: 12px;
-    padding: 5px 12px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    background: var(--surface);
-    color: var(--text2);
-    cursor: pointer;
-    transition: all 0.15s;
-    font-family: 'Courier New', monospace;
-  }
-  .btn-opt:hover { border-color: var(--accent); color: var(--accent); }
-  .btn-opt.active {
-    background: var(--accent-light);
-    border-color: var(--accent);
-    color: var(--accent-dark);
-    font-weight: 600;
-  }
+    /* CARD BODY */
+    .card-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 220px;
+    }
+    @media (max-width: 620px) {
+      .card-body { grid-template-columns: 1fr; }
+    }
 
-  /* CODE PANEL — hidden by default */
-  .code-panel {
-    background: var(--code-bg);
-    padding: 1.25rem 1.5rem;
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    animation: slideIn 0.4s ease;
-  }
-  .code-panel.revealed { display: flex; }
+    /* DEMO PANEL */
+    .demo-panel {
+      padding: 1.5rem;
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    @media (max-width: 620px) {
+      .demo-panel { border-right: none; border-bottom: 1px solid var(--border); }
+    }
+    .panel-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text3);
+    }
+    .demo-stage {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      flex: 1;
+      position: relative;
+    }
+    .controls { display: flex; flex-direction: column; gap: 10px; }
+    .ctrl-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .ctrl-row label {
+      font-size: 12px;
+      color: var(--text2);
+      min-width: 90px;
+    }
+    .ctrl-row input[type=range] {
+      flex: 1;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .val-badge {
+      font-size: 12px;
+      font-family: 'Courier New', monospace;
+      color: var(--accent-dark);
+      background: var(--accent-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+      min-width: 54px;
+      text-align: center;
+    }
+    .swatches { display: flex; gap: 6px; flex-wrap: wrap; }
+    .swatch {
+      width: 26px; height: 26px;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+    .swatch:hover { transform: scale(1.15); }
+    .swatch.active { border-color: var(--text); }
+    .btn-group { display: flex; gap: 6px; flex-wrap: wrap; }
+    .btn-opt {
+      font-size: 12px;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--text2);
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: 'Courier New', monospace;
+    }
+    .btn-opt:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-opt.active {
+      background: var(--accent-light);
+      border-color: var(--accent);
+      color: var(--accent-dark);
+      font-weight: 600;
+    }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-4px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes slideIn {
-    from { opacity: 0; transform: translateX(12px); }
-    to   { opacity: 1; transform: translateX(0); }
-  }
+    /* CODE PANEL — hidden by default */
+    .code-panel {
+      background: var(--code-bg);
+      padding: 1.25rem 1.5rem;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      animation: slideIn 0.4s ease;
+    }
+    .code-panel.revealed { display: flex; }
 
-  /* Hidden placeholder shown before reveal */
-  .code-placeholder {
-    background: var(--code-bg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 2rem;
-    cursor: pointer;
-    transition: background 0.2s;
-    border-left: 1px solid #313244;
-  }
-  .code-placeholder:hover { background: #252535; }
-  .code-placeholder.hidden { display: none; }
-  .code-placeholder-icon {
-    font-size: 28px;
-    opacity: 0.3;
-    filter: blur(1px);
-  }
-  .code-placeholder-lines {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    width: 80%;
-  }
-  .code-placeholder-line {
-    height: 10px;
-    border-radius: 4px;
-    background: #313244;
-    filter: blur(3px);
-  }
-  .code-placeholder-hint {
-    font-size: 11px;
-    color: #585b70;
-    letter-spacing: 0.04em;
-    margin-top: 4px;
-  }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(12px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
 
-  .code-panel-label {
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #585b70;
-  }
-  pre.code-block {
-    font-family: 'Courier New', monospace;
-    font-size: 13px;
-    line-height: 1.8;
-    color: var(--code-text);
-    white-space: pre-wrap;
-    word-break: break-all;
-    background: none;
-    border: none;
-    padding: 0;
-  }
-  .c-tag { color: var(--code-tag); }
-  .c-attr { color: var(--code-attr); }
-  .c-str { color: var(--code-str); }
-  .c-prop { color: #89b4fa; }
-  .c-val-dynamic { color: var(--code-val); font-weight: 600; }
-  .c-comment { color: var(--code-comment); font-style: italic; }
-  .c-punc { color: #6c7086; }
+    /* Hidden placeholder shown before reveal */
+    .code-placeholder {
+      background: var(--code-bg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 2rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      border-left: 1px solid #313244;
+    }
+    .code-placeholder:hover { background: #252535; }
+    .code-placeholder.hidden { display: none; }
+    .code-placeholder-icon {
+      font-size: 28px;
+      opacity: 0.3;
+      filter: blur(1px);
+    }
+    .code-placeholder-lines {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      width: 80%;
+    }
+    .code-placeholder-line {
+      height: 10px;
+      border-radius: 4px;
+      background: #313244;
+      filter: blur(3px);
+    }
+    .code-placeholder-hint {
+      font-size: 11px;
+      color: #585b70;
+      letter-spacing: 0.04em;
+      margin-top: 4px;
+    }
 
-  .result-tag {
-    display: inline-block;
-    font-size: 10px;
-    padding: 2px 8px;
-    border-radius: 4px;
-    background: #313244;
-    color: #a6adc8;
-    font-family: 'Courier New', monospace;
-    margin-top: 4px;
-    transition: all 0.3s;
-  }
-  .result-tag strong { color: var(--code-val); }
+    .code-panel-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #585b70;
+    }
+    pre.code-block {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--code-text);
+      white-space: pre-wrap;
+      word-break: break-all;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+    .c-tag { color: var(--code-tag); }
+    .c-attr { color: var(--code-attr); }
+    .c-str { color: var(--code-str); }
+    .c-prop { color: #89b4fa; }
+    .c-val-dynamic { color: var(--code-val); font-weight: 600; }
+    .c-comment { color: var(--code-comment); font-style: italic; }
+    .c-punc { color: #6c7086; }
 
-  /* Demo elements */
-  .demo-text-el {
-    font-size: 22px;
-    font-weight: 500;
-    transition: all 0.3s;
-    color: var(--text);
-    text-align: center;
-  }
-  .demo-box {
-    transition: all 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .result-tag {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #313244;
+      color: #a6adc8;
+      font-family: 'Courier New', monospace;
+      margin-top: 4px;
+      transition: all 0.3s;
+    }
+    .result-tag strong { color: var(--code-val); }
 
-  /* Footer */
-  .footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 13px;
-    color: var(--text3);
-  }
-</style>
+    /* Demo elements */
+    .demo-text-el {
+      font-size: 22px;
+      font-weight: 500;
+      transition: all 0.3s;
+      color: var(--text);
+      text-align: center;
+    }
+    .demo-box {
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 13px;
+      color: var(--text3);
+    }
+  </style>
 </head>
 <body>
 
@@ -387,11 +387,6 @@
   <div class="header-badge">Aula interativa</div>
   <h1>Propriedades <span>CSS</span> para iniciantes</h1>
   <p>Experimente cada propriedade, tente adivinhar o que ela faz e depois revele o código.</p>
-  <div class="header-stats">
-    <div class="stat"><div class="stat-num">11</div><div class="stat-lbl">propriedades</div></div>
-    <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">interativo</div></div>
-    <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">instalação necessária</div></div>
-  </div>
 </header>
 
 <main class="main">
@@ -399,7 +394,7 @@
   <!-- ===== COLOR ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">color</span>
+      <span class="prop-tag">Coloração</span>
       <span class="prop-desc" id="desc-color">Muda a cor do texto de um elemento.</span>
       <button class="reveal-btn" onclick="reveal('color', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -407,12 +402,11 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage">
           <span id="color-text" class="demo-text-el" style="color:#1D9E75;">Olá, mundo!</span>
         </div>
         <div class="controls">
-          <div><div class="panel-label" style="margin-bottom:6px;">Escolha a cor do texto</div>
+          <div>
           <div class="swatches">
             <div class="swatch active" style="background:#1D9E75" data-c="#1D9E75" data-name="verde" onclick="pickColor(this)"></div>
             <div class="swatch" style="background:#D85A30" data-c="#D85A30" data-name="laranja" onclick="pickColor(this)"></div>
@@ -436,14 +430,14 @@
       <div class="code-panel" id="code-color">
         <div class="code-panel-label">📄 Código</div>
         <pre class="code-block"><span class="c-comment">/* HTML */</span>
-<span class="c-tag">&lt;p</span> <span class="c-attr">class</span><span class="c-punc">=</span><span class="c-str">"meu-texto"</span><span class="c-tag">&gt;</span>
-  Olá, mundo!
-<span class="c-tag">&lt;/p&gt;</span>
+          <span class="c-tag">&lt;p</span> <span class="c-attr">class</span><span class="c-punc">=</span><span class="c-str">"meu-texto"</span><span class="c-tag">&gt;</span>
+            Olá, mundo!
+          <span class="c-tag">&lt;/p&gt;</span>
 
-<span class="c-comment">/* CSS */</span>
-<span class="c-prop">.meu-texto</span> <span class="c-punc">{</span>
-  <span class="c-prop">color</span><span class="c-punc">:</span> <span class="c-val-dynamic" id="color-code">#1D9E75</span><span class="c-punc">;</span>
-<span class="c-punc">}</span></pre>
+          <span class="c-comment">/* CSS */</span>
+          <span class="c-prop">.meu-texto</span> <span class="c-punc">{</span>
+            <span class="c-prop">color</span><span class="c-punc">:</span> <span class="c-val-dynamic" id="color-code">#1D9E75</span><span class="c-punc">;</span>
+          <span class="c-punc">}</span></pre>
         <div class="result-tag">resultado → texto em <strong id="color-name">verde</strong></div>
       </div>
     </div>
@@ -452,7 +446,7 @@
   <!-- ===== BACKGROUND-COLOR ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">background-color</span>
+      <span class="prop-tag">Coloração</span>
       <span class="prop-desc" id="desc-bg">Muda a cor de fundo de um elemento.</span>
       <button class="reveal-btn" onclick="reveal('bg', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -460,12 +454,11 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage">
           <div id="bg-box" class="demo-box" style="width:100px;height:60px;border-radius:8px;background:#5DCAA5;"></div>
         </div>
         <div class="controls">
-          <div><div class="panel-label" style="margin-bottom:6px;">Escolha a cor de fundo</div>
+          <div>
           <div class="swatches">
             <div class="swatch active" style="background:#5DCAA5" data-c="#5DCAA5" data-name="teal" onclick="pickBg(this)"></div>
             <div class="swatch" style="background:#F0997B" data-c="#F0997B" data-name="salmão" onclick="pickBg(this)"></div>
@@ -503,7 +496,7 @@
   <!-- ===== FONT-SIZE ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">font-size</span>
+      <span class="prop-tag">Fonte do texto</span>
       <span class="prop-desc" id="desc-fs">Controla o tamanho das letras.</span>
       <button class="reveal-btn" onclick="reveal('fs', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -511,13 +504,11 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage">
           <span id="fs-text" class="demo-text-el" style="font-size:20px;color:#534AB7;">Texto</span>
         </div>
         <div class="controls">
           <div class="ctrl-row">
-            <label>tamanho</label>
             <input type="range" min="10" max="52" value="20" oninput="setFs(this.value)">
             <span class="val-badge" id="fs-val">20px</span>
           </div>
@@ -549,7 +540,7 @@
   <!-- ===== FONT-WEIGHT ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">font-weight</span>
+      <span class="prop-tag">Fonte do texto</span>
       <span class="prop-desc" id="desc-fw">Controla a espessura do texto — de fino a negrito.</span>
       <button class="reveal-btn" onclick="reveal('fw', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -557,7 +548,6 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage">
           <span id="fw-text" class="demo-text-el" style="font-size:26px;font-weight:100;color:#D85A30;">Palavra</span>
         </div>
@@ -598,7 +588,7 @@
   <!-- ===== TEXT-ALIGN ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">text-align</span>
+      <span class="prop-tag">Alinhamento</span>
       <span class="prop-desc" id="desc-ta">Alinha o texto horizontalmente dentro do elemento.</span>
       <button class="reveal-btn" onclick="reveal('ta', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -606,18 +596,17 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage" style="display:block; padding:16px; min-height:100px;">
           <div style="background:white;border:1px solid #e2e0d8;border-radius:6px;padding:12px 16px;width:100%;">
-            <p id="ta-text" style="text-align:left;transition:all 0.3s;color:#1a1917;font-size:15px;line-height:1.6;">CSS é incrível e muito divertido de aprender!</p>
+            <p id="ta-text" style="text-align:left;transition:all 0.3s;color:#1a1917;font-size:15px;line-height:1.6;">CSS é incrível!</p>
           </div>
         </div>
         <div class="controls">
           <div class="panel-label" style="margin-bottom:6px;">Escolha o alinhamento</div>
           <div class="btn-group">
-            <button class="btn-opt active" onclick="setAlign('left','esquerda',this)">← esquerda</button>
+            <button class="btn-opt active" onclick="setAlign('left','esquerda',this)">esquerda</button>
             <button class="btn-opt" onclick="setAlign('center','centralizado',this)">centro</button>
-            <button class="btn-opt" onclick="setAlign('right','direita',this)">direita →</button>
+            <button class="btn-opt" onclick="setAlign('right','direita',this)">direita</button>
             <button class="btn-opt" onclick="setAlign('justify','justificado',this)">justificado</button>
           </div>
         </div>
@@ -635,7 +624,7 @@
         <div class="code-panel-label">📄 Código</div>
         <pre class="code-block"><span class="c-comment">/* HTML */</span>
 <span class="c-tag">&lt;p</span> <span class="c-attr">class</span><span class="c-punc">=</span><span class="c-str">"paragrafo"</span><span class="c-tag">&gt;</span>
-  CSS é incrível...
+  CSS é incrível!
 <span class="c-tag">&lt;/p&gt;</span>
 
 <span class="c-comment">/* CSS */</span>
@@ -650,7 +639,7 @@
   <!-- ===== BORDER-RADIUS ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">border-radius</span>
+      <span class="prop-tag">Bordas</span>
       <span class="prop-desc" id="desc-br">Arredonda os cantos de um elemento — de quadrado a círculo.</span>
       <button class="reveal-btn" onclick="reveal('br', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -658,13 +647,11 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage">
           <div id="br-box" class="demo-box" style="width:80px;height:80px;background:#AFA9EC;border-radius:0px;"></div>
         </div>
         <div class="controls">
           <div class="ctrl-row">
-            <label>arredondado</label>
             <input type="range" min="0" max="50" value="0" oninput="setBr(this.value)">
             <span class="val-badge" id="br-val">0px</span>
           </div>
@@ -696,7 +683,7 @@
   <!-- ===== BORDER ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">border</span>
+      <span class="prop-tag">Bordas</span>
       <span class="prop-desc" id="desc-bd">Adiciona uma moldura ao redor do elemento.</span>
       <button class="reveal-btn" onclick="reveal('bd', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -704,13 +691,12 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage">
           <div id="bd-box" class="demo-box" style="width:80px;height:80px;border-radius:8px;background:#f5f4f0;border:3px solid #534AB7;"></div>
         </div>
         <div class="controls">
           <div class="ctrl-row">
-            <label>espessura</label>
+            <div class="panel-label" style="margin-bottom:6px;">espessura</div>
             <input type="range" min="1" max="14" value="3" oninput="setBd(this.value)">
             <span class="val-badge" id="bd-val">3px</span>
           </div>
@@ -762,7 +748,7 @@
   <!-- ===== WIDTH / HEIGHT ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">width / height</span>
+      <span class="prop-tag">Tamanhos</span>
       <span class="prop-desc" id="desc-wh">Define a largura e a altura de um elemento.</span>
       <button class="reveal-btn" onclick="reveal('wh', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -770,18 +756,17 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage" style="overflow:hidden;min-height:120px;">
           <div id="wh-box" class="demo-box" style="width:80px;height:50px;background:#F0997B;border-radius:6px;font-size:11px;color:#4A1B0C;"></div>
         </div>
         <div class="controls">
           <div class="ctrl-row">
-            <label>largura (width)</label>
+            <div class="panel-label" style="margin-bottom:6px;">largura (width)</div>
             <input type="range" min="20" max="170" value="80" oninput="setW(this.value)">
             <span class="val-badge" id="w-val">80px</span>
           </div>
           <div class="ctrl-row">
-            <label>altura (height)</label>
+            <div class="panel-label" style="margin-bottom:6px;">altura (height)</div>
             <input type="range" min="20" max="110" value="50" oninput="setH(this.value)">
             <span class="val-badge" id="h-val">50px</span>
           </div>
@@ -815,7 +800,7 @@
   <!-- ===== PADDING ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">padding</span>
+      <span class="prop-tag">Espaçamento</span>
       <span class="prop-desc" id="desc-pad">Espaço interno entre o conteúdo e a borda do elemento.</span>
       <button class="reveal-btn" onclick="reveal('pad', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -823,7 +808,6 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage" style="overflow:hidden;">
           <div id="pad-outer" style="background:#FAC775;border-radius:8px;padding:4px;display:inline-flex;transition:all 0.3s;">
             <div style="background:#0F6E56;border-radius:4px;width:44px;height:44px;"></div>
@@ -831,12 +815,11 @@
         </div>
         <div class="controls">
           <div class="ctrl-row">
-            <label>espaço interno</label>
             <input type="range" min="0" max="36" value="4" oninput="setPad(this.value)">
             <span class="val-badge" id="pad-val">4px</span>
           </div>
         </div>
-        <p style="font-size:11px;color:var(--text3);line-height:1.5;">A área <span style="background:#FAC775;padding:1px 6px;border-radius:3px;font-size:11px;color:#633806;">amarela</span> é o padding — o espaço que o elemento respira por dentro.</p>
+        <p style="font-size:11px;color:var(--text3);line-height:1.5;">Considere a área <span style="background:#FAC775;padding:1px 6px;border-radius:3px;font-size:11px;color:#633806;">amarela</span> — o espaço que o elemento respira por dentro.</p>
       </div>
       <div class="code-placeholder" id="ph-pad" onclick="reveal('pad', document.querySelector('[onclick*=pad]'))">
         <div class="code-placeholder-icon">💻</div>
@@ -866,7 +849,7 @@
   <!-- ===== MARGIN ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">margin</span>
+      <span class="prop-tag">Espaçamento</span>
       <span class="prop-desc" id="desc-margin">Espaço externo ao redor do elemento — distância para os vizinhos.</span>
       <button class="reveal-btn" onclick="reveal('margin', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -874,7 +857,6 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage" style="overflow:hidden;flex-direction:column;gap:0;padding:8px;align-items:center;justify-content:center;">
           <div style="background:#e2e0d8;border:1px dashed #9e9d97;border-radius:4px;padding:4px 8px;font-size:11px;color:#6b6a65;">elemento de cima</div>
           <div id="margin-spacer" style="height:8px;transition:height 0.3s;"></div>
@@ -884,17 +866,17 @@
         </div>
         <div class="controls">
           <div class="ctrl-row">
-            <label>margin-top</label>
+            <div class="panel-label" style="margin-bottom:6px;">Superior</div>
             <input type="range" min="0" max="40" value="8" oninput="setMargin('top',this.value)">
             <span class="val-badge" id="mt-val">8px</span>
           </div>
           <div class="ctrl-row">
-            <label>margin-bottom</label>
+            <div class="panel-label" style="margin-bottom:6px;">Inferior</div>
             <input type="range" min="0" max="40" value="8" oninput="setMargin('bottom',this.value)">
             <span class="val-badge" id="mb-val">8px</span>
           </div>
         </div>
-        <p style="font-size:11px;color:var(--text3);line-height:1.5;">O espaço entre a caixa <span style="background:#dbeafe;padding:1px 6px;border-radius:3px;font-size:11px;color:#042C53;">azul</span> e os vizinhos é o margin.</p>
+        <p style="font-size:11px;color:var(--text3);line-height:1.5;">Considere o espaço entre a caixa <span style="background:#dbeafe;padding:1px 6px;border-radius:3px;font-size:11px;color:#042C53;">azul</span> e os vizinhos.</p>
       </div>
       <div class="code-placeholder" id="ph-margin" onclick="reveal('margin', document.querySelector('[onclick*=margin]'))">
         <div class="code-placeholder-icon">💻</div>
@@ -931,7 +913,7 @@
   <!-- ===== OPACITY ===== -->
   <div class="card">
     <div class="card-header">
-      <span class="prop-tag">opacity</span>
+      <span class="prop-tag">Visibilidade</span>
       <span class="prop-desc" id="desc-op">Controla a transparência do elemento — de invisível a totalmente visível.</span>
       <button class="reveal-btn" onclick="reveal('op', this)">
         <span class="btn-icon">✦</span> Ver resposta
@@ -939,13 +921,12 @@
     </div>
     <div class="card-body">
       <div class="demo-panel">
-        <div class="panel-label">🎨 Demonstração ao vivo</div>
         <div class="demo-stage">
           <div id="op-box" class="demo-box" style="width:80px;height:80px;background:#378ADD;border-radius:8px;opacity:1;font-size:12px;font-weight:600;color:#042C53;">100%</div>
         </div>
         <div class="controls">
           <div class="ctrl-row">
-            <label>transparência</label>
+            <div class="panel-label" style="margin-bottom:6px;">transparência</div>
             <input type="range" min="0" max="100" value="100" oninput="setOp(this.value)">
             <span class="val-badge" id="op-val">100%</span>
           </div>
@@ -978,7 +959,7 @@
 </main>
 
 <footer class="footer">
-  <p>Feito para aulas de CSS para iniciantes &nbsp;·&nbsp; Todas as propriedades são padrão CSS3</p>
+  <p>Aula interativa de CSS para iniciantes &nbsp;·&nbsp; Todas as propriedades são padrão CSS3</p>
 </footer>
 
 <script>
